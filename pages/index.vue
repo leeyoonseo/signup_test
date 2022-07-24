@@ -3,6 +3,7 @@
     <component 
       :is="currentStepComponent" 
       @next="handleNextStep" 
+      @prev="handlePrevStep" 
     />
   </div>
 </template>
@@ -46,6 +47,10 @@ export default  {
       if (this.step >= Steps.length) return;
       this.step = this.step + 1;
     },
+    handlePrevStep() {
+      if (this.step === 0) return;
+      this.step = this.step - 1;
+    }
   }
 }
 </script>
