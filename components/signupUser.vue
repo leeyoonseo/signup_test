@@ -39,7 +39,7 @@
 </div>
 </template>
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters } from 'vuex';
 export default {
   name: 'SignupUser',
   data() {
@@ -157,7 +157,6 @@ export default {
 }
 </script>
 <style scoped>
-
 .user {
   display: inline-block;
 }
