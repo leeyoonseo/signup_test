@@ -1,9 +1,20 @@
 <template>
-  <Tutorial />
+  <div>
+    <component 
+      :is="currentStepComponent" 
+    />
+  </div>
 </template>
 
 <script>
-export default {
+import welcomeHouse from '~/components/welcomeHouse.vue';
+
+export default  {
   name: 'IndexPage',
+  computed: {
+    currentStepComponent() {
+      return welcomeHouse;
+    }
+  }
 }
 </script>
