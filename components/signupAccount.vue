@@ -22,10 +22,7 @@
       </span>
     </div>
     <div class="account__row button__area">
-      <button 
-        class="next__button" 
-        @click="handleNextStep"
-      >
+      <button @click="handleNextStep">
         다음
       </button>
     </div>
@@ -152,6 +149,7 @@ export default {
 }
 
 .account__row input {
+  border: 1px solid #333;
   height: 20px;
   line-height: 20px;
   width: 250px;
@@ -167,7 +165,7 @@ export default {
   justify-content: right;
 }
 
-.next__button {
+.button__area button {
   background: #fff;
   border: 1px solid #333;
   width: 60px;
